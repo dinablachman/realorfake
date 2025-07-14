@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>does this person exist?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>does this person exist?</h1>
+  <p>click the face you think is <strong>real</strong>.</p>
+
+  <div id="game">
+    <img id="img0" class="face" />
+    <img id="img1" class="face" />
+  </div>
+
+  <div id="message"></div>
+  <p id="score">your score: 0 / 0</p>
+
+  <!-- three-column expandable section -->
+  <section id="meta">
+    <!-- faq -->
+    <details>
+      <summary>faq</summary>
+
+      <p><strong>why this site?</strong><br>
+         i built this mini game because i believe we need to strengthen
+         and continually test our ability to detect AI-generated images (particularly those depicting humans)
+         as AI content becomes more widespread online.</p>
+
+      <p><strong>this is too easy to spot. can you make it harder?</strong><br>
+         i get it! i'm starting out with ~800 total images. though StyleGAN2
+         has strong performance + misses some of the more obvious AI 'tells',
+         image generation is constantly improving.
+         i'm working on adding more data + updating/playing around with models used
+         to generate these images.</p>
+
+      <p><strong>these are tough! how can i tell the difference?</strong><br>
+         AI image generation has gotten really good! i've compiled
+         some resources that i'll eventually link <em>here</em>, but for now,
+         practicing just like this helps improve your AI-intuition muscles.</p>
+    </details>
+
+    <!-- privacy -->
+    <details>
+      <summary>privacy</summary>
+
+      <p>i don't collect any personal data, cookies, or analytics.
+         if i ever add anonymous stats to see how well people spot AI faces, i'll update this message first so you're in the loop.</p>
+    </details>
+
+    <!-- credits -->
+    <details>
+      <summary>credits</summary>
+
+      <p><strong>image sources</strong><br>
+         • <em>ai</em> faces: generated via
+         <a href="https://thispersondoesnotexist.com" target="_blank" rel="noopener">
+           thispersondoesnotexist.com
+         </a> (StyleGAN&nbsp;2, Karras et al., 2019).<br>
+         • <em>real</em> faces: sampled from the public
+         <a href="https://github.com/NVlabs/ffhq-dataset" target="_blank" rel="noopener">
+           Flickr-Faces-HQ&nbsp;(FFHQ) dataset
+         </a>.<br>
+         all images are uniformly cropped and shown solely for demonstration.</p>
+    </details>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

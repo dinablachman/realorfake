@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <title>does this person exist?</title>
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Open Graph / Twitter meta tags -->
+  <meta property="og:title" content="does this person exist?">
+  <meta property="og:description" content="a quick real-vs-fake face quiz. can you beat my score?">
+  <meta property="og:url" content="https://dinablachman.github.io/realorfake/">
+  <meta property="og:image" content="https://dinablachman.github.io/realorfake/og.png">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -17,6 +24,10 @@
 
   <div id="message"></div>
   <p id="score">your score: 0 / 0</p>
+  <p style="text-align: center; margin-top: 10px;">
+    <a id="share" href="#" aria-label="share my score">share my score</a>
+    <span id="toast" role="status" aria-live="polite" style="display:none;margin-left:8px;">copied!</span>
+  </p>
 
   <!-- three-column expandable section -->
   <section id="meta">

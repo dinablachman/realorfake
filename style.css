@@ -62,8 +62,65 @@ body{
   
   /* mobile: stack columns */
   @media(max-width:700px){
+    body {
+      padding: 1rem;
+      font-size: 18px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    
+    #game{
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .face{
+      width: 280px;
+      height: 240px;
+      border-width: 8px;
+    }
+    
+    #score {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 1.5rem 0;
+    }
+    
+    #share {
+      font-size: 18px;
+    }
+    
     #meta{
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    
+    #meta details {
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    #meta summary {
+      font-size: 20px;
+      margin: -1rem -1.2rem 0;
+      padding: 1rem 1.2rem;
+    }
+    
+    #meta p {
+      font-size: 16px;
+      margin: 0.8rem 0;
+      line-height: 1.6;
     }
   }
   

@@ -1,5 +1,7 @@
 # does this person exist? — test your AI face detection skills
 
+![game demo](screenshots/demo.gif)
+
 **live:** https://dinablachman.github.io/realorfake/  
 
 ---
